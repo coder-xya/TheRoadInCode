@@ -1,12 +1,26 @@
 <!DOCTYPE html>
+<!-- HTML5文档类型声明 -->
 <html lang="en">
   <head>
+    <!-- 字符集设置为UTF-8，确保正确显示各种字符 -->
     <meta charset="UTF-8" />
+
+    <!-- 视口设置，使页面在不同设备上正确缩放 -->
+    <!-- width=device-width: 设置页面宽度等于设备宽度 -->
+    <!-- initial-scale=1.0: 设置初始缩放比例为1.0 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Three.js Prictice</title>
+
+    <!-- 页面标题 -->
+    <title>Three.js Practice</title>
   </head>
   <body>
-    <canvas class="threejs"></canvas>
+    <!-- Canvas元素，Three.js将在这个元素上渲染3D场景 -->
+    <!-- class="threejs" 用于在JavaScript中通过querySelector选择这个元素 -->
+    <canvas class="webGL"></canvas>
+
+    <!-- 引入JavaScript模块 -->
+    <!-- type="module" 允许我们使用ES6模块语法（如import/export） -->
+    <!-- src="./index.js" 指定JavaScript文件的路径 -->
     <script type="module" src="./index.js"></script>
   </body>
 </html>
