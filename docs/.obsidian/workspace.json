@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "95a9dbe943ab738f",
+    "type": "split",
+    "children": [
+      {
+        "id": "9c751033be8a49ed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c895879725c83b13",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02_架构详解/05_NestJS框架.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "05_NestJS框架"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "08d1d8bf59fface7",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef101a7eb46e1974",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "14105cea93b69b7b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "6de057a1aed31694",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "645f0a1dda8f93ec",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8726d3f3b8c93ef6",
+    "type": "split",
+    "children": [
+      {
+        "id": "4adc29b1d01c788d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "19b8d1c119e44e79",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "02_架构详解/05_NestJS框架.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "05_NestJS框架 的反向链接列表"
+            }
+          },
+          {
+            "id": "45a70ff1f16e26f8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "02_架构详解/05_NestJS框架.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "05_NestJS框架 的出链列表"
+            }
+          },
+          {
+            "id": "efb0724eb8a95276",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "eabc57989e47a62c",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "e3f1dcb75471f46e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "02_架构详解/05_NestJS框架.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "05_NestJS框架 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "c895879725c83b13",
+  "lastOpenFiles": [
+    "02_架构详解/04_NextJS框架.md",
+    "02_架构详解/05_NestJS框架.md",
+    "02_架构详解/01_pnpm包管理器.md",
+    "02_架构详解/10_项目结构说明.md",
+    "02_架构详解/11_配置文件详解.md",
+    "02_架构详解/07_TailwindCSS样式.md",
+    "02_架构详解/README.md",
+    "02_架构详解/09_代码质量工具.md",
+    "02_架构详解/08_Docker容器化.md",
+    "02_架构详解/06_Prisma数据库.md",
+    "02_架构详解/03_TypeScript类型系统.md",
+    "02_架构详解/02_Turborepo构建系统.md",
+    "01_准备工作/tech-comparison.md",
+    "01_准备工作/roadmap.md",
+    "01_准备工作/requirements.md",
+    "01_准备工作/architecture.md",
+    "01_准备工作",
+    "02_架构详解",
+    "00_准备工作/tech-comparison.md",
+    "00_准备工作/roadmap.md",
+    "00_准备工作/requirements.md",
+    "00_准备工作/architecture.md",
+    "00_准备工作",
+    "架构详解",
+    "tech-comparison.md",
+    "准备工作/tech-comparison.md",
+    "准备工作/roadmap.md",
+    "准备工作/requirements.md",
+    "准备工作/architecture.md",
+    "准备工作",
+    "roadmap.md"
+  ]
+}
