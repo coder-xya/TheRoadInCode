@@ -7,6 +7,11 @@ dist
 .next
 .turbo
 out
+*.js
+*.d.ts
+*.d.ts.map
+!*.config.js
+!eslint.config.js
 
 # Environment files
 .env
