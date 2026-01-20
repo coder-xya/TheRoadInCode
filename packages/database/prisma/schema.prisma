@@ -58,8 +58,14 @@ model Post {
   updatedAt   DateTime  @updatedAt
   publishedAt DateTime?
 
+  // 公开文章列表查询优化
   @@index([published, createdAt(sort: Desc)])
-  @@index([slug])
+  // 按分类筛选
+  @@index([categoryId])
+  // 按作者筛选
+  @@index([authorId])
+  // 精选文章查询
+  @@index([featured, published])
 }
 
 model Category {
@@ -87,6 +93,8 @@ model PostTag {
   tagId  String
 
   @@id([postId, tagId])
+  // 按标签查询文章
+  @@index([tagId])
 }
 
 model Comment {
@@ -106,6 +114,8 @@ model Comment {
   updatedAt  DateTime  @updatedAt
 
   @@index([postId, approved])
+  // 加载回复树
+  @@index([parentId])
 }
 
 model Work {

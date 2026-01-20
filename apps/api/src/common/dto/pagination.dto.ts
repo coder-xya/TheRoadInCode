@@ -1,0 +1,60 @@
+import { Type } from 'class-transformer';
+import { IsInt, IsOptional, Max, Min } from 'class-validator';
+import { ApiPropertyOptional } from '@nestjs/swagger';
+
+export class PaginationDto {
+  @ApiPropertyOptional({ default: 1, minimum: 1 })
+  @IsOptional()
+  @Type(() => Number)
+  @IsInt()
+  @Min(1)
+  page?: number = 1;
+
+  @ApiPropertyOptional({ default: 10, minimum: 1, maximum: 100 })
+  @IsOptional()
+  @Type(() => Number)
+  @IsInt()
+  @Min(1)
+  @Max(100)
+  limit?: number = 10;
+
+  get skip(): number {
+    return ((this.page ?? 1) - 1) * (this.limit ?? 10);
+  }
+
+  get take(): number {
+    return this.limit ?? 10;
+  }
+}
+
+export interface PaginatedResult<T> {
+  data: T[];
+  meta: {
+    total: number;
+    page: number;
+    limit: number;
+    totalPages: number;
+    hasNextPage: boolean;
+    hasPrevPage: boolean;
+  };
+}
+
+export function createPaginatedResult<T>(
+  data: T[],
+  total: number,
+  page: number,
+  limit: number,
+): PaginatedResult<T> {
+  const totalPages = Math.ceil(total / limit);
+  return {
+    data,
+    meta: {
+      total,
+      page,
+      limit,
+      totalPages,
+      hasNextPage: page < totalPages,
+      hasPrevPage: page > 1,
+    },
+  };
+}
