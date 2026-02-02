@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_架构详解/05_NestJS框架.md",
+                "file": "03_开发任务/00-学习路径规划.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05_NestJS框架"
+              "title": "00-学习路径规划"
             }
           }
         ]
@@ -185,22 +185,27 @@
   },
   "active": "c895879725c83b13",
   "lastOpenFiles": [
-    "02_架构详解/04_NextJS框架.md",
+    "01_准备工作/01_requirements.md",
+    "03_开发任务/00-学习路径规划.md",
+    "01_准备工作/02_architecture.md",
+    "README.md",
+    "03_开发任务/README.md",
+    "03_开发任务/M1-项目初始化与Entry基座.md",
+    "03_开发任务",
+    "01_准备工作/tech-comparison.md",
+    "01_准备工作/roadmap.md",
+    "02_架构详解/09_代码质量工具.md",
     "02_架构详解/05_NestJS框架.md",
+    "02_架构详解/04_NextJS框架.md",
     "02_架构详解/01_pnpm包管理器.md",
     "02_架构详解/10_项目结构说明.md",
     "02_架构详解/11_配置文件详解.md",
     "02_架构详解/07_TailwindCSS样式.md",
     "02_架构详解/README.md",
-    "02_架构详解/09_代码质量工具.md",
     "02_架构详解/08_Docker容器化.md",
     "02_架构详解/06_Prisma数据库.md",
     "02_架构详解/03_TypeScript类型系统.md",
     "02_架构详解/02_Turborepo构建系统.md",
-    "01_准备工作/tech-comparison.md",
-    "01_准备工作/roadmap.md",
-    "01_准备工作/requirements.md",
-    "01_准备工作/architecture.md",
     "01_准备工作",
     "02_架构详解",
     "00_准备工作/tech-comparison.md",
@@ -211,10 +216,6 @@
     "架构详解",
     "tech-comparison.md",
     "准备工作/tech-comparison.md",
-    "准备工作/roadmap.md",
-    "准备工作/requirements.md",
-    "准备工作/architecture.md",
-    "准备工作",
-    "roadmap.md"
+    "准备工作"
   ]
 }

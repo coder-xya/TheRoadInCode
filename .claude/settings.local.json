@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__serena__get_current_config",
+      "mcp__memory__read_graph",
+      "mcp__vibe_kanban__list_projects",
+      "mcp__playwright__browser_tabs",
+      "Bash(ls -la:*)",
+      "Bash(claude mcp list:*)"
+    ]
+  }
+}

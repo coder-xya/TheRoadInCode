@@ -149,15 +149,15 @@ apps/web/
 
 ### 3.2 渲染策略
 
-| 页面 | 策略 | 理由 |
-|------|------|------|
-| 首页 | ISR (60s) | 内容更新频率中等 |
-| 文章列表 | ISR (60s) | 新文章发布后刷新 |
-| 文章详情 | SSG + ISR | 静态生成，按需重验证 |
-| 分类/标签 | SSG | 相对静态 |
-| 作品页 | SSG | 更新频率低 |
-| 关于页 | SSG | 静态内容 |
-| 管理后台 | CSR | 需要认证，动态交互 |
+| 页面      | 策略      | 理由                 |
+| --------- | --------- | -------------------- |
+| 首页      | ISR (60s) | 内容更新频率中等     |
+| 文章列表  | ISR (60s) | 新文章发布后刷新     |
+| 文章详情  | SSG + ISR | 静态生成，按需重验证 |
+| 分类/标签 | SSG       | 相对静态             |
+| 作品页    | SSG       | 更新频率低           |
+| 关于页    | SSG       | 静态内容             |
+| 管理后台  | CSR       | 需要认证，动态交互   |
 
 ### 3.3 状态管理
 
@@ -495,6 +495,7 @@ GET    /search?q=keyword        # 全文搜索
 ```
 
 **Token 配置**:
+
 - Access Token: 15 分钟有效期
 - Refresh Token: 7 天有效期，HTTP-only Cookie
 
@@ -540,6 +541,7 @@ export const postSchema = z.object({
 ### 5.2 packages/ui
 
 基于 Shadcn/ui 的共享组件：
+
 - Button, Input, Card, Dialog
 - Typography (Heading, Text, Code)
 - DataTable, Pagination
@@ -551,11 +553,11 @@ export const postSchema = z.object({
 
 ### 6.1 方案对比
 
-| 方案 | 前端 | 后端 | 数据库 | 适用场景 |
-|------|------|------|--------|----------|
-| Vercel + Railway | Vercel | Railway | Railway PG | 快速上线、低运维 |
-| Docker Compose | Docker | Docker | Docker PG | 本地开发、VPS 部署 |
-| K8s | K8s | K8s | Managed DB | 大规模生产 |
+| 方案             | 前端   | 后端    | 数据库     | 适用场景           |
+| ---------------- | ------ | ------- | ---------- | ------------------ |
+| Vercel + Railway | Vercel | Railway | Railway PG | 快速上线、低运维   |
+| Docker Compose   | Docker | Docker  | Docker PG  | 本地开发、VPS 部署 |
+| K8s              | K8s    | K8s     | Managed DB | 大规模生产         |
 
 ### 6.2 推荐方案：Vercel + Railway
 
@@ -579,7 +581,7 @@ services:
       context: ..
       dockerfile: docker/web.Dockerfile
     ports:
-      - "3000:3000"
+      - '3000:3000'
     environment:
       - NEXT_PUBLIC_API_URL=http://api:4000
     depends_on:
@@ -590,7 +592,7 @@ services:
       context: ..
       dockerfile: docker/api.Dockerfile
     ports:
-      - "4000:4000"
+      - '4000:4000'
     environment:
       - DATABASE_URL=postgresql://postgres:postgres@db:5432/blog
       - JWT_SECRET=${JWT_SECRET}
